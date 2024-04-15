@@ -309,17 +309,17 @@ section:not(:first-child) {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 88px;
 }
 
 .product__name {
   font-size: 1.875rem;
   font-weight: 600;
-  margin-bottom: 5px;
 }
 
 .product__btn {
   width: 50px;
-  height: 58px;
+  height: 100%;
   background-color: transparent;
   display: flex;
   align-items: center;
