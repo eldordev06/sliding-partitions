@@ -324,6 +324,10 @@ section:not(:first-child) {
   font-weight: 600;
 }
 
+.product__text {
+  font-size: 1rem;
+}
+
 .product__btn {
   width: 50px;
   height: 100%;
@@ -335,7 +339,7 @@ section:not(:first-child) {
 }
 
 @media (max-width: 1200px) {
-  .second-section {
+  section.second-section {
     margin-top: 100px;
   }
 
@@ -347,10 +351,24 @@ section:not(:first-child) {
   .product {
     width: 80%;
   }
+
+  .product__name {
+    font-size: 1.7rem;
+  }
 }
 
 @media (max-width: 979px) {
   .product {
     width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .product__btn {
+    display: none;
+  }
+
+  .product__caption {
+    height: fit-content;
   }
 }
