@@ -20,11 +20,16 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <button class="header__menu" aria-label="Open navigation menu">
-            <span class="header__menu__line"></span>
-            <span class="header__menu__line"></span>
-            <span class="header__menu__line"></span>
-          </button>
+          <input type="checkbox" id="menu-toggle" class="sr-only" />
+          <label
+            for="menu-toggle"
+            class="header__menu"
+            aria-label="Open navigation menu"
+          >
+            <span class="header__menu-line"></span>
+            <span class="header__menu-line"></span>
+            <span class="header__menu-line"></span>
+          </label>
           <a href="/" class="header__logo-link" aria-label="Go to home page">
             <img
               src="/public/icons/logo.svg"
@@ -34,6 +39,14 @@
           </a>
           <nav class="header__nav">
             <ul class="header__list">
+              <label
+                for="menu-toggle"
+                class="header__menu header__menu--close"
+                aria-label="Close navigation menu"
+              >
+                <span class="header__menu-line header__menu-line--close"></span>
+                <span class="header__menu-line header__menu-line--close"></span>
+              </label>
               <li class="header__list-item">
                 <a href="#products" class="header__link">Products</a>
               </li>
